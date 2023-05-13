@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 function Filter(props) {
 return (
 <label>
@@ -13,5 +13,8 @@ Search Contacts:
 </label>
 );
 }
-
+Filter.propTypes = {
+  filter: PropTypes.string,
+  onChange: PropTypes.func,
+};
 export default Filter;

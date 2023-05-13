@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 class ContactForm extends React.Component {
@@ -60,5 +61,8 @@ class ContactForm extends React.Component {
     );
   }
 }
-
+ContactForm.propTypes = {
+  generateId: PropTypes.func,
+  onSubmit: PropTypes.func,
+};
 export default ContactForm;
